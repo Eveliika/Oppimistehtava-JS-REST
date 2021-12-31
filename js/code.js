@@ -6,6 +6,7 @@ document.getElementById("animal").onclick = function get_animal_joke_of_the_day(
         let joke = JSON.parse(this.response);
 	     // Access the result here
 	     document.getElementById("joke").innerHTML = joke.contents.jokes[0].joke.text;
+         document.querySelector("footer > label").innerHTML = "&copy;" + joke.contents.copyright;
 	 }
     };
     xhttp.open("GET", "https://api.jokes.one/jod?category=animal", true);
@@ -25,6 +26,7 @@ document.getElementById("blonde").onclick = function get_blonde_joke_of_the_day(
         let joke = JSON.parse(this.response);
 	     // Access the result here
 	     document.getElementById("joke").innerHTML = joke.contents.jokes[0].joke.text;
+         document.querySelector("footer > label").innerHTML = "&copy;" + joke.contents.copyright;
 	 }
     };
     xhttp.open("GET", "https://api.jokes.one/jod?category=blonde", true);
@@ -44,6 +46,7 @@ document.getElementById("knockKnock").onclick = function get_knock_knock_joke_of
         let joke = JSON.parse(this.response);
 	     // Access the result here
 	     document.getElementById("joke").innerHTML = joke.contents.jokes[0].joke.text;
+         document.querySelector("footer > label").innerHTML = "&copy;" + joke.contents.copyright;
 	 }
     };
     xhttp.open("GET", "https://api.jokes.one/jod?category=knock-knock", true);

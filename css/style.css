@@ -9,9 +9,6 @@ body {
     height: 100vh;
     background-color: #1d1c1c;
     color: #fff;
-    /*font-family: 'Courier New', Courier, monospace;*/
-    
-    overflow: hidden;
 }
 
 a {
@@ -20,7 +17,7 @@ a {
 }
 
 h1 {
-    border: 2px dotted #0ff;
+    border: 2 px dotted #0ff;
     padding: 15px;
     margin: 10px;
     width: fit-content;
@@ -37,7 +34,7 @@ p {
 .button {
     height: 330px;
     width: 275px;
-    margin: 15px;
+    margin: 15px 15px 45px 15px;
     padding: 15px;
     color: #fff;
     display: inline-flex;
