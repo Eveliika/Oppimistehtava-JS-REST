@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 2fr 7fr 1fr;
+    height: 100vh;
+    background-color: #1d1c1c;
+    color: #fff;
+    /*font-family: 'Courier New', Courier, monospace;*/
+    
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    border: 2px dotted #0ff;
+    padding: 15px;
+    margin: 10px;
+    width: fit-content;
+}
+
+#container {
+    text-align: center;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+.button {
+    height: 330px;
+    width: 275px;
+    margin: 15px;
+    padding: 15px;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 8px;
+    box-shadow: 0 0 7px 1px #0ff
+}
+
+.button:hover {
+    box-shadow:
+    0 0 50px 2px #fff,
+    0 0 80px 7px #f0f,
+    0 0 120px 15px #0ff;
+}
+
+#animal {
+    background-image: url(../images/dog.jpg);
+    background-size: cover;
+}
+
+#blonde {
+    background-image: url(../images/blonde.jpg);
+    background-size: cover;
+}
+
+#knockKnock {
+    background-image: url(../images/door.jpg);
+    background-size: cover;
+}
+
+#jokePage {
+    display: none;
+}
+
+#joke {
+    height: fit-content;
+    box-shadow:
+    0 0 50px 2px #fff,
+    0 0 80px 7px #f0f,
+    0 0 120px 15px #0ff;
+    padding: 70px;
+    margin: 60px 50px 20px 50px;
+}
+
+#changeCategory {
+    background-color: #1d1c1c;
+    padding: 15px;
+    margin: 40px;
+    color: #fff;
+    box-shadow: 0 0 7px 1px #0ff;
+    font-size: 1.1em;
+}
+
+#changeCategory:hover {
+    box-shadow: 0 0 7px 4px #0ff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}

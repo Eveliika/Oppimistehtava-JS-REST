@@ -11,7 +11,10 @@ document.getElementById("animal").onclick = function get_animal_joke_of_the_day(
     xhttp.open("GET", "https://api.jokes.one/jod?category=animal", true);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.setRequestHeader("X-JokesOne-Api-Secret", "YOUR API HERE");
-    xhttp.send(); 
+    xhttp.send();
+
+    document.getElementById("categories").style = "display: none";
+    document.getElementById("jokePage").style = "display: block";
 }
 
 document.getElementById("blonde").onclick = function get_blonde_joke_of_the_day() {
@@ -28,6 +31,9 @@ document.getElementById("blonde").onclick = function get_blonde_joke_of_the_day(
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.setRequestHeader("X-JokesOne-Api-Secret", "YOUR API HERE");
     xhttp.send(); 
+
+    document.getElementById("categories").style = "display: none";
+    document.getElementById("jokePage").style = "display: block";
 }
 
 document.getElementById("knockKnock").onclick = function get_knock_knock_joke_of_the_day() {
@@ -44,4 +50,7 @@ document.getElementById("knockKnock").onclick = function get_knock_knock_joke_of
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.setRequestHeader("X-JokesOne-Api-Secret", "YOUR API HERE");
     xhttp.send(); 
+
+    document.getElementById("categories").style = "display: none";
+    document.getElementById("jokePage").style = "display: block";
 }
