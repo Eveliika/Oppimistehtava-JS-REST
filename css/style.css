@@ -4,6 +4,7 @@
 }
 
 body {
+    margin: 0;
     display: grid;
     grid-template-rows: 2fr 7fr 1fr;
     height: 100vh;
@@ -29,19 +30,21 @@ h1 {
 
 p {
     margin-bottom: 40px;
+    font-size: 1.2em;
 }
 
 .button {
     height: 330px;
     width: 275px;
-    margin: 15px 15px 45px 15px;
+    margin: 8px 15px 30px 15px;
     padding: 15px;
     color: #fff;
     display: inline-flex;
     justify-content: center;
     align-items: flex-end;
     border-radius: 8px;
-    box-shadow: 0 0 7px 1px #0ff
+    box-shadow: 0 0 7px 1px #0ff;
+    font-size: 1.1em;
 }
 
 .button:hover {
@@ -77,7 +80,7 @@ p {
     0 0 80px 7px #f0f,
     0 0 120px 15px #0ff;
     padding: 70px;
-    margin: 60px 50px 20px 50px;
+    margin: 60px 50px 10px 50px;
 }
 
 #changeCategory {
@@ -96,6 +99,10 @@ p {
 footer {
     display: flex;
     justify-content: center;
+}
+
+footer > label {
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 938px) {

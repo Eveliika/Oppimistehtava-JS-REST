@@ -1,3 +1,4 @@
+//Animal joke
 document.getElementById("animal").onclick = function get_animal_joke_of_the_day() {
     var xhttp = new XMLHttpRequest();
 
@@ -18,6 +19,7 @@ document.getElementById("animal").onclick = function get_animal_joke_of_the_day(
     document.getElementById("jokePage").style = "display: block";
 }
 
+//Blonde joke
 document.getElementById("blonde").onclick = function get_blonde_joke_of_the_day() {
     var xhttp = new XMLHttpRequest();
 
@@ -38,6 +40,7 @@ document.getElementById("blonde").onclick = function get_blonde_joke_of_the_day(
     document.getElementById("jokePage").style = "display: block";
 }
 
+//Knock knock -joke
 document.getElementById("knockKnock").onclick = function get_knock_knock_joke_of_the_day() {
     var xhttp = new XMLHttpRequest();
 
